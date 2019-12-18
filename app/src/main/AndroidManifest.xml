@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.lqr.tinker_local">
+          package="com.yincheng.tinker_local">
 
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 
     <application
-        android:name="com.lqr.tinker.MyApplication"
+        android:name="com.yincheng.tinker.MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.lqr.MainActivity">
+        <activity android:name="com.yincheng.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <service
-            android:name="com.lqr.tinker.service.SampleResultService"
+            android:name="com.yincheng.tinker.service.SampleResultService"
             android:exported="false"/>
     </application>
 

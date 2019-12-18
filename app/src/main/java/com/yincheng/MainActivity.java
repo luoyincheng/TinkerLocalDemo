@@ -1,4 +1,4 @@
-package com.lqr;
+package com.yincheng;
 
 import android.app.AlertDialog;
 import android.graphics.Typeface;
@@ -13,8 +13,8 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.lqr.jnitest.JniUtil;
-import com.lqr.tinker_local.R;
+import com.yincheng.jnitest.JniUtil;
+import com.yincheng.tinker_local.R;
 import com.tencent.tinker.lib.library.TinkerLoadLibrary;
 import com.tencent.tinker.lib.tinker.Tinker;
 import com.tencent.tinker.lib.tinker.TinkerInstaller;
@@ -39,9 +39,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void say(View view) {
-//        Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT).show();
-        Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
-//        Toast.makeText(getApplicationContext(), "Hello World 123aaa", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
     }
 
     public void string_from_so(View view) {
@@ -51,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void install_patch(View view) {
         TinkerInstaller.onReceiveUpgradePatch(getApplicationContext(), Environment.getExternalStorageDirectory().getAbsolutePath() + "/patch_signed_7zip.apk");
-//        TinkerInstaller.onReceiveUpgradePatch(getApplicationContext(), getCacheDir().getAbsolutePath() + "/patch_signed_7zip.apk");
     }
 
     public void uninstall_patch(View view) {

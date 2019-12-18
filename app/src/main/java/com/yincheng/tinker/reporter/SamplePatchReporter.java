@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.lqr.tinker.reporter;
+package com.yincheng.tinker.reporter;
 
 import android.content.Context;
 import android.content.Intent;

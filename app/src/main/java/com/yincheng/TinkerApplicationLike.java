@@ -1,4 +1,4 @@
-package com.lqr;
+package com.yincheng;
 
 
 import android.annotation.TargetApi;
@@ -8,8 +8,8 @@ import android.content.Intent;
 import android.os.Build;
 import android.support.multidex.MultiDex;
 
-import com.lqr.tinker.Log.MyLogImp;
-import com.lqr.tinker.utils.TinkerManager;
+import com.yincheng.tinker.Log.MyLogImp;
+import com.yincheng.tinker.utils.TinkerManager;
 import com.tencent.tinker.anno.DefaultLifeCycle;
 import com.tencent.tinker.lib.tinker.Tinker;
 import com.tencent.tinker.lib.tinker.TinkerInstaller;
@@ -20,7 +20,7 @@ import com.tencent.tinker.loader.shareutil.ShareConstants;
  * 使用DefaultLifeCycle注解生成Application（这种方式是Tinker官方推荐的）
  */
 @SuppressWarnings("unused")
-@DefaultLifeCycle(application = "com.lqr.tinker.MyApplication",// application类名。只能用字符串，这个MyApplication文件是不存在的，但可以在AndroidManifest.xml的application标签上使用（name）
+@DefaultLifeCycle(application = "com.yincheng.tinker.MyApplication",// application类名。只能用字符串，这个MyApplication文件是不存在的，但可以在AndroidManifest.xml的application标签上使用（name）
         flags = ShareConstants.TINKER_ENABLE_ALL,// tinkerFlags
         loaderClass = "com.tencent.tinker.loader.TinkerLoader",//loaderClassName, 我们这里使用默认即可!（可不写）
         loadVerifyFlag = false)//tinkerLoadVerifyFlag

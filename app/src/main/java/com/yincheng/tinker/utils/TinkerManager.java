@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.lqr.tinker.utils;
+package com.yincheng.tinker.utils;
 
-import com.lqr.tinker.crash.SampleUncaughtExceptionHandler;
-import com.lqr.tinker.reporter.SampleLoadReporter;
-import com.lqr.tinker.reporter.SamplePatchListener;
-import com.lqr.tinker.reporter.SamplePatchReporter;
-import com.lqr.tinker.service.SampleResultService;
+import com.yincheng.tinker.crash.SampleUncaughtExceptionHandler;
+import com.yincheng.tinker.reporter.SampleLoadReporter;
+import com.yincheng.tinker.reporter.SamplePatchListener;
+import com.yincheng.tinker.reporter.SamplePatchReporter;
+import com.yincheng.tinker.service.SampleResultService;
 import com.tencent.tinker.lib.listener.PatchListener;
 import com.tencent.tinker.lib.patch.AbstractPatch;
 import com.tencent.tinker.lib.patch.UpgradePatch;

@@ -1,4 +1,4 @@
-package com.lqr.tinker_local;
+package com.yincheng.tinker_local;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

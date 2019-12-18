@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.lqr.tinker.service;
+package com.yincheng.tinker.service;
 
 import android.os.Handler;
 import android.os.Looper;
 import android.widget.Toast;
 
-import com.lqr.tinker.utils.TinkerUtils;
+import com.yincheng.tinker.utils.TinkerUtils;
 import com.tencent.tinker.lib.service.DefaultTinkerResultService;
 import com.tencent.tinker.lib.service.PatchResult;
 import com.tencent.tinker.lib.util.TinkerLog;

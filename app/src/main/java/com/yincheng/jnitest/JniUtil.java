@@ -1,4 +1,4 @@
-package com.lqr.jnitest;
+package com.yincheng.jnitest;
 
 public class JniUtil {
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.lqr.tinker.Log;
+package com.yincheng.tinker.Log;
 
 import android.util.Log;
 

@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.lqr.tinker.reporter;
+package com.yincheng.tinker.reporter;
 
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.lqr.tinker.crash.SampleUncaughtExceptionHandler;
-import com.lqr.tinker.utils.TinkerUtils;
+import com.yincheng.tinker.crash.SampleUncaughtExceptionHandler;
+import com.yincheng.tinker.utils.TinkerUtils;
 import com.tencent.tinker.lib.listener.DefaultPatchListener;
 import com.tencent.tinker.lib.util.TinkerLog;
 import com.tencent.tinker.loader.shareutil.ShareConstants;
