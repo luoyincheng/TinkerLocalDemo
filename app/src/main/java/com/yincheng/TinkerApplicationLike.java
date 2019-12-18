@@ -5,6 +5,7 @@ import android.annotation.TargetApi;
 import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Build;
 import android.support.multidex.MultiDex;
 
@@ -39,14 +40,15 @@ public class TinkerApplicationLike extends DefaultApplicationLike {
     // 固定写法
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     public void registerActivityLifecycleCallbacks(Application.ActivityLifecycleCallbacks callback) {
-        getApplication().registerActivityLifecycleCallbacks(callback);
+//        getApplication().registerActivityLifecycleCallbacks(callback);
+        mSelfApplication.registerActivityLifecycleCallbacks(callback);
     }
 
-//    @Override
-//    public void onCreate() {
-//        super.onCreate();
-//        // 可以将之前自定义的Application中onCreate()方法所执行的操作搬到这里...
-//    }
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        mSelfApplication.onCreate();
+    }
 
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
     @Override
@@ -54,7 +56,31 @@ public class TinkerApplicationLike extends DefaultApplicationLike {
         super.onBaseContextAttached(base);
         mContext = getApplication();
         initTinker(base);
-        // 可以将之前自定义的Application中onCreate()方法所执行的操作搬到这里...
+        mSelfApplication.attachBaseContext(base);
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        mSelfApplication.onConfigurationChanged(newConfig);
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        mSelfApplication.onLowMemory();
+    }
+
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+        mSelfApplication.onTerminate();
+    }
+
+    @Override
+    public void onTrimMemory(int level) {
+        super.onTrimMemory(level);
+        mSelfApplication.onTrimMemory(level);
     }
 
     private void initTinker(Context base) {
@@ -72,5 +98,4 @@ public class TinkerApplicationLike extends DefaultApplicationLike {
         TinkerManager.installTinker(this);
         mTinker = Tinker.with(getApplication());
     }
-
 }

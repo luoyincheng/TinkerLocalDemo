@@ -39,8 +39,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void say(View view) {
-        Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT).show();
-//        Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
     }
 
     public void string_from_so(View view) {
