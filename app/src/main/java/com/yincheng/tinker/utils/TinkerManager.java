@@ -16,6 +16,7 @@
 
 package com.yincheng.tinker.utils;
 
+import com.tencent.tinker.entry.ApplicationLike;
 import com.yincheng.tinker.crash.SampleUncaughtExceptionHandler;
 import com.yincheng.tinker.reporter.SampleLoadReporter;
 import com.yincheng.tinker.reporter.SamplePatchListener;
@@ -29,7 +30,6 @@ import com.tencent.tinker.lib.reporter.PatchReporter;
 import com.tencent.tinker.lib.tinker.TinkerInstaller;
 import com.tencent.tinker.lib.util.TinkerLog;
 import com.tencent.tinker.lib.util.UpgradePatchRetry;
-import com.tencent.tinker.loader.app.ApplicationLike;
 
 
 /**

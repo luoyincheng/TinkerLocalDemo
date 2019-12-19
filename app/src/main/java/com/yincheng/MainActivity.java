@@ -21,11 +21,6 @@ import com.tencent.tinker.lib.tinker.TinkerInstaller;
 import com.tencent.tinker.loader.shareutil.ShareConstants;
 import com.tencent.tinker.loader.shareutil.ShareTinkerInternals;
 
-
-/**
- * @创建者 CSDN_LQR
- * @描述 使用Tinker实现热修复
- */
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTvAbi;
@@ -39,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void say(View view) {
-//        Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT).show();
-        Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getApplicationContext(), "Hello World", Toast.LENGTH_SHORT).show();
     }
 
     public void string_from_so(View view) {
